@@ -1,0 +1,4 @@
+﻿Bogus es un paquete nuget para generar dta para objetos o clases...
+
+Se usa como new Faker<tipodato>() al asignar datos y se importa el espacio de nombres:
+using Bogus;
