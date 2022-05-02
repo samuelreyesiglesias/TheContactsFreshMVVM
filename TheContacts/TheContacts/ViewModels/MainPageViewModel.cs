@@ -14,7 +14,14 @@ namespace TheContacts.ViewModels
 
         public MainPageViewModel()
         {
-            //Contacts = new Faker<Contact>();
+            var contacts = new Faker<Contact>()
+                .RuleFor(o => o.Nombre, f => f.Name.FullName())
+                .RuleFor(o => o.Telefono, f => f.Phone.PhoneNumber())
+                .Generate(25);
+
+            Contacts = new ObservableCollection<Contact>(contacts);
+
+
 
         }
     }
