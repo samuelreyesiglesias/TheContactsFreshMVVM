@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheContacts.Views.ContactDetails">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <Grid>
+                <Image Source="Profile.png"
+                       HeightRequest="300"
+                       Aspect="AspectFill"
+                       ></Image>
+            </Grid>
+            <Grid HeightRequest="100" BackgroundColor="#f3f3f6">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="Samuel Reyes" FontAttributes="Bold" FontSize="Large" TextColor="black" Margin="20,0,0,0"></Label>
+                <Label Text="Developer" Grid.Row="1" VerticalOptions="Start" Margin="20,0,0,0"></Label>
+            </Grid>
+            <Grid HeightRequest="100">
+                <Label Text="(988) 982-839-033" 
+                       Margin="20,0,0,0"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold" FontSize="Large"></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using TheContacts.ViewModels;
 using Xamarin.Forms;
 
-namespace TheContacts
+namespace TheContacts.View
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new MainPageViewModel();
+            //BindingContext = new MainPageViewModel();
         }
     }
 }

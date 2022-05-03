@@ -16,8 +16,13 @@ namespace TheContacts.ViewModels
         {
             var contacts = new Faker<Contact>()
                 .RuleFor(o => o.Nombre, f => f.Name.FullName())
-                .RuleFor(o => o.Telefono, f => f.Phone.PhoneNumber())
+                .RuleFor(o => o.Telefono, f => f.Phone.PhoneNumber()) 
                 .Generate(25);
+            
+            foreach (var contact in contacts)
+            {
+                contact.Foto = "profile.png";
+            }
 
             Contacts = new ObservableCollection<Contact>(contacts);
 
